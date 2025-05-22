@@ -6,8 +6,6 @@ set(PROJ_NAME lib_software_streams)
 
 project(${PROJ_NAME} VERSION 0.1.0 LANGUAGES CXX)
 
-find_package(libssh REQUIRED)
-
 add_library(connect SHARED Connect.cpp)
 
 target_include_directories(connect
